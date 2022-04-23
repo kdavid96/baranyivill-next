@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Recaptcha from 'react-recaptcha';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 
 function Contact() {
@@ -36,15 +36,18 @@ function Contact() {
         <div className='relative w-full'>
             <form className='flex flex-col justify-start align-center p-8 w-full' onSubmit={sendEmail}>
                 <input className='p-2 rounded-md border-2 border-slate-200 mb-4 w-full text-left' type="email" id='email' placeholder='E-mail cím'/>
-                <input className='p-2 rounded-md border-2 border-slate-200 mb-4 w-full text-left' type="text" id='text' placeholder='Üzenet szövege'/>
+                <textarea rows={5} className='p-2 rounded-md border-2 border-slate-200 mb-4 w-full text-left' type="text" id='text' placeholder='Üzenet szövege'/>
                 <button className='rounded-md bg-lime-600 text-white px-2 py-4' type="submit">Küldés</button>
             </form>
-            <Recaptcha
-                sitekey="000a271c-3be2-4afc-aa28-ec2ed8de02ef"
-                render="explicit"
-                verifyCallback={verifyCaptcha}
-                onloadCallback={sendEmailCaptcha}
-            />
+            <div className='my-0 mx-auto w-fit'>
+                <ReCAPTCHA
+                    size="normal"
+                    sitekey="000a271c-3be2-4afc-aa28-ec2ed8de02ef"
+                    render="explicit"
+                    verifyCallback={verifyCaptcha}
+                    onloadCallback={sendEmailCaptcha}
+                    />
+            </div>
         </div>
     </div>
     )

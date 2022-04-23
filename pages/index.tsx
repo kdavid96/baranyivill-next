@@ -18,7 +18,7 @@ export default function Home({ posts }: any, { categories}: any) {
       <Work />
       <Contact />
       <PostWidget categories={categories} slug={undefined}/>
-      <Popup />
+      {/*<Popup />*/}
     </div>
     </>
   )
