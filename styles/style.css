@@ -1,0 +1,18 @@
+.green-gradient {
+    background: linear-gradient(200.32deg,#86c705 23.46%,#6db300 69.93%);
+}
+
+.header-logo{
+    left: 43.5%;
+    width: 15%;
+    top: 10%;
+}
+
+.header-logo-small{
+    left: 45%;
+    width: 10%;
+    top: 0;
+}
+
+.custom-img{
+}
