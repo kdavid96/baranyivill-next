@@ -11,9 +11,25 @@
 .header-logo-small{
     left: 45%;
     width: 10%;
-    top: 0;
+    top: 15px;
     margin-top: 0;
 }
 
-.custom-img{
+
+.gmap_canvas {
+    overflow:hidden
+    ;background:none!important;
+    height:100%;
+    width:100%;
+}
+
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+}
+
+.hamburger-react > div {
+    color: rgb(163 230 53);
 }

@@ -14,10 +14,10 @@ function ParallaxImage() {
             />
             </Parallax>
             
-            <div className='absolute top-0 w-full h-full backdrop-blur-sm flex justify-evenly align-center'>
-              <span className='flex justify-center items-center px-8 py-4 bg-lime-400 h-12 mx-0 my-auto rounded-3xl text-white font-semibold text-4xl'>Telefon</span>
-              <span className='flex justify-center items-center px-8 py-4 bg-lime-400 h-12 mx-0 my-auto rounded-3xl text-white font-semibold text-4xl'>Facebook</span>
-              <span className='flex justify-center items-center px-8 py-4 bg-lime-400 h-12 mx-0 my-auto rounded-3xl text-white font-semibold text-4xl'>Email</span>
+            <div className='absolute w-full h-full backdrop-blur-sm flex justify-evenly align-center' style={{top: -1.55 + 'rem'}}>
+              <span className='flex justify-center items-center px-8 py-4 bg-lime-400 h-12 mx-0 my-auto rounded-3xl text-white font-medium text-4xl cursor-pointer'>Telefon</span>
+              <span className='flex justify-center items-center px-8 py-4 bg-lime-400 h-12 mx-0 my-auto rounded-3xl text-white font-medium text-4xl cursor-pointer'>Facebook</span>
+              <span className='flex justify-center items-center px-8 py-4 bg-lime-400 h-12 mx-0 my-auto rounded-3xl text-white font-medium text-4xl cursor-pointer'>Email</span>
             </div>
         </ParallaxProvider>
     </div>

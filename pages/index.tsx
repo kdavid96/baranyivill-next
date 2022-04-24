@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { ParallaxImage, PostWidget, About, Services, Work, Contact, Popup } from '../components/index'
+import { ParallaxImage, PostWidget, About, Services, Work, Contact, Popup, Footer } from '../components/index'
 import { getCategories, getPosts } from '../services';
 
 export default function Home({ posts }: any, { categories}: any) {
@@ -10,7 +10,9 @@ export default function Home({ posts }: any, { categories}: any) {
         <title>Baranyi Épületvillamosság - Villanyszerelés okosan</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/*<ParallaxImage />*/}
+      {/*<div className='block lg:hidden'>
+        <ParallaxImage />
+      </div>*/}
     </div>
     <div className="container bg-white mx-auto px-0 mb-8 md:px-10">
       <About />
@@ -18,7 +20,10 @@ export default function Home({ posts }: any, { categories}: any) {
       <Work />
       <Contact />
       <PostWidget categories={categories} slug={undefined}/>
-      {/*<Popup />*/}
+      <div className='absolute top-0 left-0 w-full h-full'>
+        <Popup />
+      </div>
+      <Footer />
     </div>
     </>
   )

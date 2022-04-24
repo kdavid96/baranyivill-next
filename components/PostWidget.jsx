@@ -29,13 +29,21 @@ const PostWidget = ({ categories, slug }) => {
           <div className='w-16 flex-none'>
             <img src={post?.headerImage?.url} height="60px" width="60px" className='align-middle rounded-md' alt={post?.title} />
           </div>
-          <div className='flex-grow ml-4'>
-            <p className='text-lime-400 font-semibold font-xs'>
-              {moment(post?.createdAt).format('MMM DD, YYYY')}
-            </p>
-            <Link href={`/post/${post?.slug}`} key={post?.title}>
-              <span className='text-md text-slate-800 cursor-pointer'>{post?.title}</span>
-            </Link>
+          <div className='flex-grow ml-4 grid grid-rows-1 grid-cols-4'>
+            <div className='flex flex-col lg:flex-row justify-start gap-0 lg:gap-28 items-center col-span-4 md:col-span-3'>
+              <p className='text-lime-400 font-semibold font-xs'>
+                {moment(post?.createdAt).format('MMM DD, YYYY')}
+              </p>
+              <Link href={`/post/${post?.slug}`} key={post?.title}>
+                <span className='text-md text-slate-800 cursor-pointer'>{post?.title}</span>
+              </Link>
+            </div>
+            <div className='col-span-1 hidden md:block'>
+              <Link href={`/post/${post?.slug}`} key={post?.title}>
+                <button className='text-md text-white font-lg rounded-lg cursor-pointer bg-lime-400 p-4'>Olvasson tovább...</button>
+              </Link>
+            </div>
+            
           </div>
         </div>
       ))}
