@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div id="about" className='p-6 flex justify-center align-center flex-col'>
+    <div id="about" className='container p-6 flex justify-center align-center flex-col'>
         <span className='mt-0 mb-0 ml-auto mr-auto relative px-12 py-4 bg-lime-400 rounded-2xl text-white font-semibold'>Rólunk</span>
         <div className='relative p-8 text-center rounded-lg shadow-lg'>
             Vállalkozásunk 2006 óta szolgálja ki mind a lakossági, mind az ipari felhasználók igényeit villanyszerelés, gyenge áramú rendszerek, okosotthon, automatizálás tevékenységeiben.<br/><br/>

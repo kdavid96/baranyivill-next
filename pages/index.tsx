@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { ParallaxImage, PostWidget, About, Services, Work, Contact, Popup, Footer } from '../components/index'
+import { ParallaxImage, PostWidgetBottom, About, Services, Work, Contact, Popup, Footer } from '../components/index'
 import { getCategories, getPosts } from '../services';
 
 export default function Home({ posts }: any, { categories}: any) {
@@ -14,12 +14,12 @@ export default function Home({ posts }: any, { categories}: any) {
         <ParallaxImage />
       </div>*/}
     </div>
-    <div className="container bg-white mx-auto px-0 mb-8 md:px-10">
+    <div className="flex flex-col items-center justify-center bg-white mx-auto px-0">
       <About />
       <Services />
       <Work />
       <Contact />
-      <PostWidget categories={categories} slug={undefined}/>
+      <PostWidgetBottom categories={categories} slug={undefined}/>
       <div className='absolute top-0 left-0 w-full h-full'>
         <Popup />
       </div>

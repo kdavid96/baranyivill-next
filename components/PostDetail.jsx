@@ -47,7 +47,7 @@ function PostDetail({ post }) {
       <div className='relative overflow-hidden mb-6'>
           <img src={post?.headerImage?.url} alt={post?.title} className='object-top h-full w-full rounded-t-lg' />
       </div>
-      <div className='px-4 lg:px-0'>
+      <div className='px-4 lg:px-0 text-left lg:text-center'>
         <div className='flex items-center mb-8 w-full'>
           <div className='flex items-center justify-start lg:mg-0 w-full lg:w-auto mr-8'>
             <img 
