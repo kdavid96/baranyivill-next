@@ -10,7 +10,7 @@ function Services() {
                 <div className='hidden lg:block w-full flex-1 rounded-md'>
                     <Image className='w-auto h-auto rounded-md' src="/images/lakossagi.png" alt="Baranyi Épületvillamosság - Villanyszerelés okosan Kecskeméten és környékén" width='600px' height='600px' />
                 </div>
-                <div className='flex flex-col w-full justify-center align-center py-4 lg:p-8 bg-white md:bg-gray-200 rounded-lg m-4 bg-opacity-30 flex-1'>
+                <div className='flex flex-col w-full justify-center align-center py-4 lg:p-8 bg-white md:bg-gray-200 rounded-lg m-4 bg-opacity-30 lg:flex-1'>
                     <p className='font-bold text-2xl mb-8'>Lakossági villanyszerelés</p>
                     <ul className='font-normal text-md'>
                         <li className='mb-4'>Hibakeresés, hibaelhárítás</li>
@@ -30,7 +30,7 @@ function Services() {
                 <div className='hidden lg:block w-full flex-1 rounded-md'>
                     <Image className='w-auto h-auto rounded-md' src="/images/ipari.jpg" alt="Baranyi Épületvillamosság - Villanyszerelés okosan Kecskeméten és környékén" width='600px' height='600px' />
                 </div>
-                <div className='flex flex-col justify-center align-center w-full py-4 lg:p-8 bg-white md:bg-gray-200 rounded-lg m-4 bg-opacity-30 flex-1'>
+                <div className='flex flex-col justify-center align-center w-full py-4 lg:p-8 bg-white md:bg-gray-200 rounded-lg m-4 bg-opacity-30 lg:flex-1'>
                     <p className='font-bold text-2xl mb-8'>Ipari villanyszerelés</p>
                     <ul className='font-normal text-md'>
                         <li className='mb-4'>Hibakeresés, hibaelhárítás</li>
@@ -47,7 +47,7 @@ function Services() {
                 <div className='hidden lg:block w-auto flex-1 rounded-md'>
                     <Image className='w-auto h-auto rounded-md' src="/images/drawing.jpg" alt="Baranyi Épületvillamosság - Villanyszerelés okosan Kecskeméten és környékén" width='600px' height='600px' />
                 </div>
-                <div className='flex flex-col justify-center align-center py-4 lg:p-8 w-full bg-white md:bg-gray-200 rounded-lg m-4 bg-opacity-30 flex-1'>
+                <div className='flex flex-col justify-center align-center py-4 lg:p-8 w-full bg-white md:bg-gray-200 rounded-lg m-4 bg-opacity-30 lg:flex-1'>
                     <p className='font-bold text-2xl mb-8'>Tervezés</p>
                     <ul className='font-normal text-md'>
                         <li className='mb-4'>Hibakeresés, hibaelhárítás</li>

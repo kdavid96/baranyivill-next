@@ -42,7 +42,7 @@ function Contact() {
     return (
         <div id="contact" className='relative w-full bg-white container'>
             <div className='p-0 md:p-6 flex justify-start align-center flex-col bg-white rounded-lg shadow-none md:shadow-md w-auto'>
-                <span className='my-0 mx-auto relative mb-8 px-12 py-4 bg-lime-600 rounded-2xl text-white font-semibold'>Kapcsolat</span>
+                <span className='my-0 mx-auto relative mb-8 px-12 py-4 bg-lime-400 rounded-2xl text-white font-semibold'>Kapcsolat</span>
                 <div className='relative w-full'>
                     <form className='flex flex-col justify-start align-center p-8 w-full' onSubmit={sendEmail}>
                         <input className='p-2 rounded-md border-2 border-slate-200 mb-4 w-full text-left' type="email" id='email' placeholder='E-mail cím'/>
@@ -55,7 +55,7 @@ function Contact() {
                                 onChange={onReCAPTCHAChange}
                                 />
                         </div>
-                        <button className='mt-2 rounded-md bg-lime-600 text-white px-2 py-4' type="submit">Küldés</button>
+                        <button className='mt-2 rounded-md bg-lime-400 text-white px-2 py-4' type="submit">Küldés</button>
                     </form>
                     <p className='font-semibold text-center text-red-600'>{message}</p>
                 </div>

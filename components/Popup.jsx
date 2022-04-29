@@ -9,7 +9,7 @@ function Popup() {
   }
 
   return (
-    <div style={{display: isOpen ? 'flex' : 'none'}} className='container left-1/2 -translate-x-2/4 rounded-lg text-white fixed z-50 bottom-12 backdrop-blur-lg bg-red-600 flex justify-evenly items-center flex-col shadow-lg'>
+    <div style={{display: isOpen ? 'flex' : 'none', zIndex: 62}} className='container left-1/2 -translate-x-2/4 rounded-lg text-white fixed bottom-12 backdrop-blur-lg bg-red-600 flex justify-evenly items-center flex-col shadow-lg'>
       <div className='relative p-4 text-center flex flex-col items-center justify-evenly h-full gap-8'>
         <h1 className="text-lime-400 font-semibold text-3xl">Figyelem!</h1>
         <p className='text-xl font-normal'>Ha otthon felújítási támogatást szeretne igénybe venni villanyszerelésre, kérem kattintson a további információkért.</p>

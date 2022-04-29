@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { ParallaxImage, PostWidgetBottom, About, Services, Work, Contact, Popup, Footer, SmallLogo } from '../components/index'
+import { ParallaxImage, PostWidgetBottom, About, Services, Work, Contact, Popup, Footer, SmallLogo, PhoneIcon } from '../components/index'
 import { getCategories, getPosts } from '../services';
 
 export default function Home({ posts }: any, { categories}: any) {
@@ -18,7 +18,7 @@ export default function Home({ posts }: any, { categories}: any) {
       <div className='block lg:hidden'>
         <SmallLogo />
       </div>
-      <h1 className='font-semibold text-lime-400 text-3xl text-center mb-10'>Baranyi Épületvillamosság <br/> <hr className="center-diamond"></hr><span className='font-bold text-slate-500 text-2xl'>Villanyszerelés okosan Kecskeméten és környékén</span></h1>
+      <h1 className='logo font-semibold text-lime-400 text-3xl text-center mb-10'>Baranyi Épületvillamosság <br/> <hr className="center-diamond"></hr><span className='font-bold text-slate-500 text-2xl'>Villanyszerelés okosan Kecskeméten és környékén</span></h1>
       <About />
       <Services />
       <Work />
@@ -27,6 +27,7 @@ export default function Home({ posts }: any, { categories}: any) {
       <div className='absolute top-0 left-0 w-full h-full'>
         <Popup />
       </div>
+      <PhoneIcon />
       <Footer />
     </div>
     </>
