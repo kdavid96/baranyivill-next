@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ReactTooltip from 'react-tooltip'
 import Hamburger from 'hamburger-react'
+import { useRouter } from 'next/router';
 
 import { getCategories } from '../services'
 
@@ -11,7 +12,7 @@ const Header = () => {
     const [clientWindowHeight, setClientWindowHeight] = useState("");
     const [isMounted,setIsMounted] = useState(false);
     const [isOpen, setOpen] = useState(false);
-
+    const router = useRouter();
 
     const handleScroll = () => {
         setClientWindowHeight(window.scrollY);
@@ -31,9 +32,15 @@ const Header = () => {
             <div className='border-b-1 w-full flex items-center justify-between border-b py-8 relative'>
                 <div className='md:float-left block'>
                     <Link href="/">
+                        { router.pathname === '/' ? 
                         <span className={clientWindowHeight > 200 ? 'cursor-pointer font-bold text-2xl text-lime-400' : 'cursor-pointer font-bold text-2xl text-transparent'}>
                             Baranyi Épületvillamosság
                         </span>
+                        :
+                        <span className={'cursor-pointer font-bold text-2xl text-lime-400'}>
+                            Baranyi Épületvillamosság
+                        </span>
+                        }
                     </Link>
                 </div>
                 <div className={"hidden lg:block absolute top-2 left-1/2 -translate-x-1/2 bg-white rounded-full border-4 border-lime-400"}>
