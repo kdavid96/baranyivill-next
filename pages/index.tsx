@@ -18,7 +18,7 @@ export default function Home({ posts }: any, { categories}: any) {
       <div className='block lg:hidden'>
         <SmallLogo />
       </div>
-      <h1 className='font-semibold text-lime-400 text-3xl text-center mb-10'>Baranyi Épületvillamosság <br/><span className='font-bold text-slate-500 text-2xl'>Villanyszerelés okosan Kecskeméten és környékén</span></h1>
+      <h1 className='font-semibold text-lime-400 text-3xl text-center mb-10'>Baranyi Épületvillamosság <br/> <hr className="center-diamond"></hr><span className='font-bold text-slate-500 text-2xl'>Villanyszerelés okosan Kecskeméten és környékén</span></h1>
       <About />
       <Services />
       <Work />

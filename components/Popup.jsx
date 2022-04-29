@@ -15,7 +15,7 @@ function Popup() {
         <p className='text-xl font-normal'>Ha otthon felújítási támogatást szeretne igénybe venni villanyszerelésre, kérem kattintson a további információkért.</p>
         <div className='flex justify-center items-evenly gap-8'>
           <button className="rounded-lg bg-lime-400 text-white p-4 font-medium" onClick={() => {disablePopup(); window.open("http://www.allamkincstar.gov.hu/hu/lakossagi-ugyfelek/otthonfelujitasi_tamogatas_altalanos_tajekoztato", "_blank")}}>Érdekel</button>
-          <button className="rounded-lg bg-lime-400 text-white p-4" onClick={() => disablePopup()}>Tovább az oldalra</button>
+          <button className="rounded-lg bg-red-400 text-white p-4" onClick={() => disablePopup()}>Tovább az oldalra</button>
         </div>
       </div>
     </div>

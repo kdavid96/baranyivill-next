@@ -8,7 +8,7 @@ function MainPage({posts}) {
             <Blog posts={posts}/>
         </div>
         <div className='col-span-1 lg:col-span-4 mx-4'>
-            <div className="lg:sticky relative top-0 lg:top-32">
+            <div className="relative lg:sticky">
                 <PostWidget />
             </div>
         </div>

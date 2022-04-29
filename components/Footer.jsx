@@ -3,8 +3,8 @@ import React from 'react'
 function Footer() {
   return (
     <div className='w-full flex flex-col lg:flex-row items-center bg-lime-400 p-3'>
-        <div class="mapouter flex-1 w-full lg:w-auto">
-            <div class="gmap_canvas">
+        <div className="mapouter flex-1 w-full lg:w-auto">
+            <div className="gmap_canvas">
                 <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=M%C3%A1riahegy%20304,%20Kecskem%C3%A9t,%206000&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
             </div>
         </div>

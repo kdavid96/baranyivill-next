@@ -3,18 +3,11 @@
 }
 
 .header-logo{
-    left: 42.5%;
     width: 15%;
-    top: 10%;
-    max-width: 320px;
-    max-height: 320px;
 }
 
 .header-logo-small{
-    left: 45%;
     width: 10%;
-    top: 15px;
-    margin-top: 0;
 }
 
 
@@ -34,4 +27,29 @@
 
 .hamburger-react > div {
     color: rgb(163 230 53);
+}
+
+.center-diamond{
+    border: 0;
+    height: 2px;
+    width: 100%;
+    position: relative;
+    margin: 30px auto;
+    background: rgb(163 230 53);
+}
+
+.center-diamond:before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background:  rgb(163 230 53);
+    display: inline-block;
+    border: 2px solid  rgb(163 230 53);
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin: 0 0 0 -3px;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
 }
