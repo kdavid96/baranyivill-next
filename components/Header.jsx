@@ -46,7 +46,8 @@ const Header = () => {
                 <div className={"hidden lg:block absolute top-2 left-1/2 -translate-x-1/2 bg-white rounded-full border-4 border-lime-400"}>
                     <Image alt="Baranyi Épületvillamosság - Villanyszerelés okosan Kecskeméten és környékén" src="/images/logo_official.webp" width='200px' height='200px' />
                 </div>
-                <div className='hidden lg:flex flex-row justify-end align-center gap-3'>    
+                <div className='hidden lg:flex flex-row justify-end align-center gap-3'>
+                    <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="Blog"><Link href="/blog">Blog</Link></span>
                     <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="+36 30 699 11 26"><a href='tel:+36306991126'>Telefon</a></span>
                     <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="baranyiepuletvill@gmail.com"><a href='mailto:baranyiepuletvill@gmail.com'>Email</a></span> 
                     <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="/baranyiepuletvill"><a href="https://www.facebook.com/baranyiepuletvill" target='_blank'>Facebook</a></span> 
@@ -57,6 +58,7 @@ const Header = () => {
             </div>
             {isMounted && <ReactTooltip id={"mytip"} effect={"solid"} />}
             <div style={{"display": isOpen ? 'flex' : 'none'}} className='w-full p-3 absolute top-30 right-0 bg-lime-50 rounded-lg shadow-md flex flex-col gap-4'>
+                <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="Blog"><Link href="/blog">Blog</Link></span> 
                 <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="+36 30 699 11 26">Telefon</span>
                 <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="/baranyiepuletvill">Facebook</span> 
                 <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="baranyiepuletvill@gmail.com">Email</span> 
