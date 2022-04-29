@@ -41,7 +41,7 @@ function Contact() {
 
     return (
         <div id="contact" className='relative w-full bg-white container'>
-            <div className='p-0 lg:p-6 flex justify-start align-center flex-col bg-white rounded-lg shadow-md w-auto'>
+            <div className='p-0 md:p-6 flex justify-start align-center flex-col bg-white rounded-lg shadow-none md:shadow-md w-auto'>
                 <span className='my-0 mx-auto relative mb-8 px-12 py-4 bg-lime-600 rounded-2xl text-white font-semibold'>Kapcsolat</span>
                 <div className='relative w-full'>
                     <form className='flex flex-col justify-start align-center p-8 w-full' onSubmit={sendEmail}>

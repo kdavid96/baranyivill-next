@@ -20,7 +20,7 @@ const PostWidgetBottom = ({ categories, slug }) => {
   }, [slug])
   
   return (
-    <div className='container bg-white shadow-lg rounded-lg p-8 mb-8'>
+    <div className='container bg-white shadow-none lg:shadow-lg rounded-lg p-8 mb-8'>
       <h3 className='text-xl text-lime-400 mb-6 font-semibold border-b pb-4'>
         {slug ? 'Hasonló cikkek' : 'Legutóbbi cikkek'}
       </h3>
