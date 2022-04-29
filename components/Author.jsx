@@ -8,7 +8,7 @@ function Author({ author }) {
         { author?.photo ? 
         (<Image unoptimized src={author?.photo?.url} height="100px" width="100px" className='align-middle rounded-full border-4 border-lime-400' alt={author?.name} />)
         :
-        (<img src={''} height="100px" width="100px" className='align-middle rounded-full border-4 border-lime-400' alt={author?.name} />)
+        (<Image src={''} height="100px" width="100px" className='align-middle rounded-full border-4 border-lime-400' alt={author?.name} />)
         }
       </div>
       <h3 className='text-white my-4 text-xl font-bold'>{author?.name}</h3>

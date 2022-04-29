@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^12.1.5",
     "axios": "^0.26.1",
     "emailjs": "^4.0.0",
     "graphql": "^16.3.0",

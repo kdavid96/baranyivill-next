@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 
 function ParallaxImage() {
@@ -6,7 +7,7 @@ function ParallaxImage() {
     <div className='width-full relative left-0'>
         <ParallaxProvider>
             <Parallax speed={10}>
-            <img
+            <Image
                 src='/images/bulb_bg.webp'
                 alt="Parallax bulbs"
                 width="100%"

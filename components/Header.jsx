@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import ReactTooltip from 'react-tooltip'
 import Hamburger from 'hamburger-react'
 
@@ -43,7 +44,7 @@ const Header = () => {
                 <div className='block lg:hidden relative float-right'>
                     <Hamburger toggled={isOpen} toggle={setOpen} />
                 </div>
-                <img alt="Baranyi Épületvillamosság - Villanyszerelés okosan Kecskeméten és környékén" className={clientWindowHeight > 100 ? 'hidden lg:block float-none lg:float-right absolute header-logo-small mt-2 bg-white mx-auto my-0 rounded-full border-2 border-lime-400 custom-img' : 'hidden lg:block float-none lg:float-right absolute header-logo bg-white mx-auto my-0 rounded-full border-4 border-lime-400 custom-img'} src="/images/logo_official.webp" width={clientWindowHeight > 100 ? '75px' : '150px'} height={clientWindowHeight > 100 ? '75px' : '150px'} />
+                <Image alt="Baranyi Épületvillamosság - Villanyszerelés okosan Kecskeméten és környékén" className={clientWindowHeight > 100 ? 'hidden lg:block float-none lg:float-right absolute header-logo-small mt-2 bg-white mx-auto my-0 rounded-full border-2 border-lime-400 custom-img' : 'hidden lg:block float-none lg:float-right absolute header-logo bg-white mx-auto my-0 rounded-full border-4 border-lime-400 custom-img'} src="/images/logo_official.webp" width={clientWindowHeight > 100 ? '75px' : '150px'} height={clientWindowHeight > 100 ? '75px' : '150px'} />
             </div>
             {isMounted && <ReactTooltip id={"mytip"} effect={"solid"} />}
             <div style={{"display": isOpen ? 'flex' : 'none'}} className='w-full p-3 absolute top-30 right-0 bg-lime-50 rounded-lg shadow-md flex flex-col gap-4'>
