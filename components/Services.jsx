@@ -5,12 +5,12 @@ function Services() {
   return (
     <div id="services" className='container p-6 flex justify-center align-center flex-col'>
         <span className='my-0 mx-auto relative px-12 py-4 bg-lime-400 rounded-2xl text-white font-semibold'>Szolgáltatásaink</span>
-        <div className='relative p-8 text-center rounded-lg shadow-lg grid grid-cols-1 grid-rows-3'>
-            <div className='flex flex-col lg:flex-row justify-evenly items-center'>
+        <div className='relative py-4 md:p-8 text-center rounded-lg shadow-none lg:shadow-lg grid grid-cols-1 grid-rows-3'>
+            <div className='flex flex-col lg:flex-row justify-center items-center'>
                 <div className='hidden lg:block w-full flex-1 rounded-md'>
                     <img className='w-full h-auto rounded-md' src="/images/lakossagi.png" alt="lakossagi" />
                 </div>
-                <div className='flex flex-col justify-center align-center py-4 lg:p-8 bg-gray-200 rounded-lg m-4 bg-opacity-30 flex-1'>
+                <div className='flex flex-col w-full justify-center align-center py-4 lg:p-8 bg-white lg:bg-gray-200 rounded-lg m-4 bg-opacity-30 flex-1'>
                     <p className='font-bold text-2xl mb-8'>Lakossági villanyszerelés</p>
                     <ul className='font-normal text-md'>
                         <li className='mb-4'>Hibakeresés, hibaelhárítás</li>
@@ -30,7 +30,7 @@ function Services() {
                 <div className='hidden lg:block w-full flex-1 rounded-md'>
                     <img className='w-full h-auto rounded-md' src="/images/ipari.jpg" alt="ipari" />
                 </div>
-                <div className='flex flex-col justify-center align-center py-4 lg:p-8 bg-gray-200 rounded-lg m-4 bg-opacity-30 flex-1'>
+                <div className='flex flex-col justify-center align-center w-full py-4 lg:p-8 bg-white lg:bg-gray-200 rounded-lg m-4 bg-opacity-30 flex-1'>
                     <p className='font-bold text-2xl mb-8'>Ipari villanyszerelés</p>
                     <ul className='font-normal text-md'>
                         <li className='mb-4'>Hibakeresés, hibaelhárítás</li>
@@ -47,7 +47,7 @@ function Services() {
                 <div className='hidden lg:block w-auto flex-1 rounded-md'>
                     <img className='w-full h-auto rounded-md' src="/images/drawing.jpg" alt="tervezes" />
                 </div>
-                <div className='flex flex-col justify-center align-center py-4 lg:p-8 bg-gray-200 rounded-lg m-4 bg-opacity-30 flex-1'>
+                <div className='flex flex-col justify-center align-center py-4 lg:p-8 w-full bg-white lg:bg-gray-200 rounded-lg m-4 bg-opacity-30 flex-1'>
                     <p className='font-bold text-2xl mb-8'>Tervezés</p>
                     <ul className='font-normal text-md'>
                         <li className='mb-4'>Hibakeresés, hibaelhárítás</li>
