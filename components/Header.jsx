@@ -40,7 +40,7 @@ const Header = () => {
                     <Image alt="Baranyi Épületvillamosság - Villanyszerelés okosan Kecskeméten és környékén" src="/images/logo_official.webp" width='200px' height='200px' />
                 </div>
                 <div className='hidden lg:flex flex-row justify-end align-center gap-3'>    
-                    <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="+36 30 699 11 26"><a href='tel:+6306991126'>Telefon</a></span>
+                    <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="+36 30 699 11 26"><a href='tel:+36306991126'>Telefon</a></span>
                     <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="baranyiepuletvill@gmail.com"><a href='mailto:baranyiepuletvill@gmail.com'>Email</a></span> 
                     <span className='cursor-pointer px-4 py-2 text-white bg-lime-400 rounded-lg' data-for={"mytip"} data-tip="/baranyiepuletvill"><a href="https://www.facebook.com/baranyiepuletvill" target='_blank'>Facebook</a></span> 
                 </div>
